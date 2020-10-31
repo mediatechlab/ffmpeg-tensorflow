@@ -16,7 +16,7 @@ bm3d=sigma=5 -> Denoise BM3D with sigma 5, depends on the noise state of the inp
 
 sr=dnn_backend=tensorflow:model=espcn.model:scale_factor=2 -> ESPCN Superresolution with tensorflow doubling effective width and height
 
-scale=1920*0.75:1080,pad=1920:1080:"(ow-iw)/2:(oh-ih)/2",setdar=16:9,setsar=1:1 -> Final rescale to a pillarbox 1920x1080 keeping aspect ration
+scale=1920*0.75:1080,pad=1920:1080:"(ow-iw)/2:(oh-ih)/2",setdar=16:9,setsar=1:1 -> Final rescale to a pillarbox 1920x1080 keeping aspect ratio
 
 interlace -flags +ildct+ilme -framerate 30000/1001 -> intelaced 29.97 output
 
